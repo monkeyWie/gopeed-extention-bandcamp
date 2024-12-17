@@ -1,0 +1,21 @@
+{
+  "name": "gopeed-extention-bandcamp",
+  "author": "",
+  "title": "bandcamp music download",
+  "icon": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com/monkeyWie/gopeed-extention-bandcamp",
+  "repository": {
+    "url": "https://github.com/monkeyWie/gopeed-extention-bandcamp"
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": ["*://popyoursoul.bandcamp.com/*"]
+      },
+      "entry": "dist/index.js"
+    }
+  ],
+  "settings": []
+}
